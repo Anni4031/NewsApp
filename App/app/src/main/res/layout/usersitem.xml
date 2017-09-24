@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="fill_parent" android:id="@+id/ll_users">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="8dp" >
+        <TextView
+            android:text="用户名"
+            android:layout_marginTop="4dp"
+            android:textColor="#000"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_unameItem"
+            android:layout_weight="1"
+            android:layout_marginStart="20dp"
+            android:textSize="18sp"
+            />
+        <TextView
+            android:text="密码"
+            android:layout_marginTop="4dp"
+            android:textColor="#000"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_upwItem"
+            android:layout_weight="1"
+            android:layout_marginStart="10dp"
+            android:textSize="16sp"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="8dp" >
+
+        <TextView
+            android:text="性别"
+            android:layout_marginTop="4dp"
+            android:textColor="#000"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_usexItem"
+            android:layout_weight="1"
+            android:layout_marginStart="20dp"
+            android:textSize="16sp"/>
+        <TextView
+            android:text="城市名"
+            android:layout_marginTop="4dp"
+            android:textColor="#000"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_ucityItem"
+            android:layout_weight="1"
+            android:textSize="16sp"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:text="出生日期"
+        android:layout_marginTop="8dp"
+        android:textColor="#000"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_ubirthdayItem"
+        android:layout_marginStart="28dp"
+        android:textSize="16sp"/>
+</LinearLayout>

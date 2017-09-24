@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    >
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:id="@+id/ll_news"
+        android:orientation="vertical"
+        android:layout_weight="1">
+
+
+        <TextView
+            android:text="标题"
+            android:textSize="16sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_titleItem"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="4dp"
+            android:textColor="#000"
+            />
+
+        <TextView
+            android:text="内容"
+            android:layout_marginTop="4dp"
+            android:textColor="#727272"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_contentItem"
+            android:layout_marginStart="10dp"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="3dp"
+            android:layout_marginStart="8dp" >
+
+
+            <TextView
+                android:text="分类"
+                android:layout_marginTop="4dp"
+                android:textColor="#000"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_typeItem"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"/>
+            <TextView
+                android:text="发布日期"
+                android:layout_marginTop="4dp"
+                android:textColor="#000"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_dateItem"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!--<Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_updateactivity"
+        android:drawableLeft="@android:drawable/btn_star_big_on"
+        android:text="修改"
+        style="@style/btnstyle"
+        android:layout_marginStart="10dp"
+        android:onClick="renovateOnClick"
+        />-->
+
+
+</LinearLayout>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_add_news"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#C0C0C0"
+    android:orientation="vertical"
+    tools:context="com.example.app.AddNewsActivity">
+    <TextView
+        android:text="后台数据-添加新闻"
+        android:background="#FFF"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:textSize="22sp"
+        android:gravity="center"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:text="新闻标题"
+        android:background="#FFFFFF"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:paddingTop="10dp"
+        android:textSize="18sp"
+        android:paddingStart="10dp"
+        android:layout_marginTop="10dp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="请输入新闻标题"
+        android:background="#FFF"
+        android:paddingTop="10dp"
+        android:paddingStart="10dp"
+        android:inputType="textPersonName"
+        android:id="@+id/et_newstitle"/>
+    <TextView
+        android:text="新闻分类"
+        android:background="#FFF"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:paddingTop="10dp"
+        android:textSize="18sp"
+        android:paddingStart="10dp"
+        android:textColor="#000000" />
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/typeArray"
+        android:background="#FFFFFF"
+        android:paddingStart="10dp"
+        android:paddingTop="15dp"
+        android:id="@+id/sp_type" />
+    <TextView
+        android:text="新闻内容"
+        android:background="#FFF"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:paddingStart="10dp"
+        android:paddingTop="10dp"
+       />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="请输入新闻内容"
+        android:background="#FFF"
+        android:paddingStart="10dp"
+        android:inputType="textMultiLine"
+        android:minLines="2"
+        android:id="@+id/et_newscontent"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#FFF"
+        android:layout_marginTop="20dp"
+        android:gravity="center">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_addactivity"
+            android:drawableLeft="@android:drawable/ic_input_add"
+            android:text="添加新闻"
+            android:onClick="addonenewOnClick"
+            android:paddingEnd="5dp"
+            />
+        <Button
+            android:text="清除"
+            android:drawableLeft="@android:drawable/ic_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:id="@+id/btn_clear"
+            android:onClick="addclearOnClick"
+            android:paddingEnd="5dp"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

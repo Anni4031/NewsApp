@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_show_news"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context="com.example.app.ShowNewsActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/my"
+            android:layout_weight="1"
+            android:layout_marginTop="5dp"
+            android:onClick="UserOnClick"
+            android:layout_marginStart="10dp"
+            />
+        <TextView
+            android:text="新闻列表(后台)"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="22sp"
+            android:layout_weight="1"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:id="@+id/tv_newslist" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_addactivity"
+            android:drawableLeft="@android:drawable/ic_input_add"
+            android:text="添加新闻"
+            style="@style/btnstyle"
+            android:onClick="addOnClick"
+            />
+
+    </LinearLayout>
+
+    <ListView
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/lv_newslist" />
+</LinearLayout>

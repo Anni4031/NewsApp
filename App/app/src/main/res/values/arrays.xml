@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="cityArray">
+        <item>北京市</item>
+        <item>上海市</item>
+        <item>广州市</item>
+        <item>深圳市</item>
+        <item>重庆市</item>
+        <item>天津市</item>
+        <item>佛山市</item>
+        <item>江门市</item>
+        <item>茂名市</item>
+    </string-array>
+
+    <string-array name="typeArray">
+        <item>健康</item>
+        <item>社会</item>
+        <item>娱乐</item>
+    </string-array>
+</resources>

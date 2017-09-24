@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_change_pw"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    style="@style/bgstyle"
+    android:orientation="vertical"
+    tools:context="com.example.app.ChangePwActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="修改密码"
+        android:textSize="30dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="13dp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="密码:"
+            android:textSize="18sp"
+            android:layout_marginStart="5dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/et_changepw"
+            android:ems="10"
+            android:layout_marginStart="40dp"
+            android:inputType="numberPassword"
+            android:hint="请填写密码,仅为数字"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="确认密码:"
+            android:textSize="18sp"
+            android:layout_marginStart="5dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/et_changerepw"
+            android:ems="10"
+            android:layout_marginStart="20dp"
+            android:inputType="numberPassword"
+            android:hint="再次填写密码,仅为数字"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="20dp">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_register"
+        android:text="修改密码"
+        android:drawableLeft="@android:drawable/btn_star_big_on"
+        android:onClick="ChangePwClick"
+        style="@style/btnstyle"
+        android:paddingEnd="5dp"
+
+        android:layout_marginStart="10dp"
+        />
+
+    <Button
+        android:text="清除"
+        android:drawableLeft="@android:drawable/ic_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="CclearClick"
+        style="@style/btnstyle"
+        android:paddingEnd="5dp"
+        android:layout_marginStart="10dp"
+        />
+        </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_register"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    style="@style/bgstyle"
+    android:orientation="vertical"
+    tools:context="com.example.app.RegisterActivity">
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="新用户注册"
+            android:gravity="center"
+            android:textSize="30sp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:hint="@string/username"
+            android:ems="10"
+            android:id="@+id/et_name" />
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/rg_sex">
+            <RadioButton
+                android:text="@string/male"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/rb_male"
+                android:layout_weight="1" />
+            <RadioButton
+                android:text="@string/female"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/rb_female"
+                android:layout_weight="1" />
+        </RadioGroup>
+    </LinearLayout>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberPassword"
+        android:ems="10"
+        android:layout_marginTop="10dp"
+        android:hint="@string/password"
+        android:id="@+id/et_pw" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberPassword"
+        android:hint="@string/password"
+        android:ems="10"
+        android:layout_marginTop="10dp"
+        android:id="@+id/et_repw" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal">
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/birthday"
+            android:enabled="false"
+            android:ems="10"
+            android:id="@+id/et_birthday"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            />
+
+        <Button
+            android:text="@string/getdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/et_birthday"
+            android:layout_toEndOf="@+id/et_birthday"
+            android:layout_marginStart="5dp"
+            android:paddingEnd="5dp"
+            android:id="@+id/btn_date"
+            style="@style/btnstyle"
+            android:onClick="dateOnClick"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/city"
+            android:id="@+id/tx_city"/>
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:entries="@array/cityArray"
+            android:id="@+id/sp_city" />
+
+    </LinearLayout>
+    <CheckBox
+        android:text="@string/cbremember"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="15dp"
+        android:id="@+id/cb_agree" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+        <Button
+            android:text="@string/btnregister"
+            android:drawableLeft="@android:drawable/ic_input_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="10dp"
+            android:layout_marginEnd="30dp"
+            android:paddingEnd="5dp"
+            android:onClick="addonClick"
+            style="@style/btnstyle"
+            android:id="@+id/btn_regist" />
+
+        <Button
+            android:text="@string/btnclear"
+            android:drawableLeft="@android:drawable/ic_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/btnstyle"
+            android:paddingEnd="5dp"
+            android:onClick="clearonClick"
+            android:id="@+id/btn_clear" />
+    </LinearLayout>
+</LinearLayout>
